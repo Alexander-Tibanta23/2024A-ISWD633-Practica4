@@ -10,7 +10,9 @@ Asignar núcleos de CPU específicos:
 ```
 
 **¿Como saber el numero de procesadores virtuales que tiene una máquina?**
-## COMPLETAR
+En PowerShell:
+Get-WmiObject -Class Win32_Processor | Select-Object -Property NumberOfLogicalProcessors
+
 
 ## Ejemplos
 _Puedes copiar y ejecutar directamente cada uno de los comandos_
